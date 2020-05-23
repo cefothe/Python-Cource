@@ -111,3 +111,42 @@ elif a == b:
 else:
   print("a is greater than b")
 ```
+
+Exercises (for each example create file `project5-1-{tasknumber}`):
+- [ ] Create a program that have variable called `age`, then compare it with 10. If you are under 12,
+ you need to see the message `You are to young for Python`. If you are up or equals to 12, you need to see the message `Let's start with Python`.
+ 
+## Embedding Values in Strings
+If you want to display a message using the contents of a variable, you can embed values in a string with `%s`, which is like a token for a value you want to add later. (Embedding Values is a programmer-talking about "inserting values.") 
+For example, to have Python calculate or store the number of points you've scored in a game, and then add it to a sentence like "I scored points," use:
+```python3
+my_score = 100
+message = "I scored %s points"
+print(message % my_score)
+```
+You can embed more values
+```python3
+nums = "What did the number %s say to be number %s ? Nice Belt!!!"
+print(nums % (0,8))
+```
+Exercises (for each example create file `project6-{tasknumber}`):
+- [ ] Create a program that need to have two variables. `firstName` and `lastName`, 
+which contains information about your first and last name. For example my first name is
+Stefan and my last name is Angelov, the output of the program need to be `My first name is Stefan and my last name is Angelov`
+- [ ] Create a program that need to have three variables `a`, `b` and `c`. For example `a=5`
+`b=10` and the output of the program need to be `a=5, b=10, a+b=15`
+- [ ] Create a program that need to one variable `age` equals to your years. For example: I'm on 26, so 
+ the output of the program need to be `My age is 26` 
+
+## Ask for Input
+In practice, your program will always need some kind of input from the user.
+You are still using the command line right now, so text is the only way to get input.
+You get text from a user by using a special build-in called `input`. It waits 
+for the user to type something.
+```python3
+number = input('Insert your number ')
+print("Your number is %s" % number)
+```
+Exercises (for each example create file `project7-{tasknumber}`):
+- [ ] Create a program that ask use for their name, store the result into variable and then print `My name is Stefan`
+- [ ] Create a program that ask use for their age, store the result into variable and then print `My age is 26`
