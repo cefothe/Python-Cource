@@ -29,9 +29,9 @@ print(my_message)
 ``` 
 Now lets create the same examples with variables.
 Еxercises (for each example create file `project2-{tasknumber}`):
-- [ ] Create a program that print your name
-- [ ] Create a program that print your name and your age
-- [ ] Create a program that print your country name
+- [X] Create a program that print your name
+- [X] Create a program that print your name and your age
+- [X] Create a program that print your country name
 
 Please think about good variables name.
 ## Loops (iteration)
@@ -46,7 +46,7 @@ while True:
 ```
 
 Еxercises (for each example create file `project3-1-{tasknumber}`):
-- [ ] Create a program with infinity loop that print your name
+- [X] Create a program with infinity loop that print your name
 - [ ] Create a program with infinity loop that print our academy name
 
 ### Repeat
@@ -58,13 +58,13 @@ while number <= 100:
     number = number+1
 ```
 Еxercises (for each example create file `project3-2-{tasknumber}`):
-- [ ] Create a program that print all numbers from 1 to 1000
-- [ ] Create a program that print all even numbers from 1 to 1000
+- [X] Create a program that print all numbers from 1 to 1000
+- [X] Create a program that print all even numbers from 1 to 1000
 - [ ] Create a program that print all odd numbers from 1 to 1000
-- [ ] Create a program that print all  numbers from 1000 to 1
+- [X] Create a program that print all  numbers from 1000 to 1
 - [ ] Create a program that print all even numbers from 1000 to 1
 - [ ] Create a program that print all odd numbers from 1000 to 1
-- [ ] Create a program that print `Hello World` 300 times
+- [X] Create a program that print `Hello World` 300 times
 
 ## Taking a decision with If-Else
 Python supports the usual logical conditions from mathematics:
@@ -113,7 +113,7 @@ else:
 ```
 
 Exercises (for each example create file `project5-1-{tasknumber}`):
-- [ ] Create a program that have variable called `age`, then compare it with 10. If you are under 12,
+- [X] Create a program that have variable called `age`, then compare it with 10. If you are under 12,
  you need to see the message `You are to young for Python`. If you are up or equals to 12, you need to see the message `Let's start with Python`.
  
 ## Embedding Values in Strings
@@ -130,7 +130,7 @@ nums = "What did the number %s say to be number %s ? Nice Belt!!!"
 print(nums % (0,8))
 ```
 Exercises (for each example create file `project6-{tasknumber}`):
-- [ ] Create a program that need to have two variables. `firstName` and `lastName`, 
+- [X] Create a program that need to have two variables. `firstName` and `lastName`, 
 which contains information about your first and last name. For example my first name is
 Stefan and my last name is Angelov, the output of the program need to be `My first name is Stefan and my last name is Angelov`
 - [ ] Create a program that need to have three variables `a`, `b` and `c`. For example `a=5`
@@ -148,5 +148,5 @@ number = input('Insert your number ')
 print("Your number is %s" % number)
 ```
 Exercises (for each example create file `project7-{tasknumber}`):
-- [ ] Create a program that ask use for their name, store the result into variable and then print `My name is Stefan`
-- [ ] Create a program that ask use for their age, store the result into variable and then print `My age is 26`
+- [X] Create a program that ask you for your name, store the result into variable and then print `My name is Stefan`
+- [ ] Create a program that ask you for your age, store the result into variable and then print `My age is 26`
