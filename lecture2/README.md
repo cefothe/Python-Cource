@@ -10,8 +10,8 @@ You are still using the command line right now, so text is the only way to get i
 You get text from a user by using a special build-in called `input`. It waits 
 for the user to type something.
 Exercises (for each example create file `lessesn-2-project7-{tasknumber}`):
-- [ ] Ask user for `What is your guess? ` and save the result into variable called `players_guess`
-- [ ] Print the result from previews task 
+- [X] Ask user for `What is your guess? ` and save the result into variable called `players_guess`
+- [X] Print the result from previews task 
 - [ ] Try to add 5 into variable of the first task
 
 ### Compare the guess to a Number
@@ -21,11 +21,11 @@ of the inserted value to be a number.
 players_quess = input("What is your guess? ")
 print(int(players_quess)+10)
 ```
-- [ ] Create a variable called `computer_number` and assigned it some number
-- [ ] Ask user to guess a number `What is your guess?` and save the value into variable called `players_guess`
-- [ ] Compare `computer_number` and `players_quess`, if they are equals show message to user `Correct!`
-- [ ] If the `computer_number` is highest than `players_quess` print the message `Too low`
-- [ ] If the `computer_number` is less than `players_quess` print the message `Too high`
+- [X] Create a variable called `computer_number` and assigned it some number
+- [X] Ask user to guess a number `What is your guess?` and save the value into variable called `players_guess`
+- [X] Compare `computer_number` and `players_quess`, if they are equals show message to user `Correct!`
+- [X] If the `computer_number` is highest than `players_quess` print the message `Too low`
+- [X] If the `computer_number` is less than `players_quess` print the message `Too high`
 
 ### Keep Asking until the player guesses correctly
 Now you know hot to ask for the players guess, how to convert (change) the answer into a number,
@@ -46,7 +46,7 @@ while True:
     break
 ```
 As you can see of the example. Now the application printed only once `Python`.
-- [ ] Let's modified the the guessing game to kept asking for a number
+- [X] Let's modified the the guessing game to kept asking for a number
 - [ ] Play the game three-time and count the number of tries until you guess the number
 - [ ] Extend the game to do that part of the game
 
