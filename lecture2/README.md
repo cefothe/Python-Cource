@@ -12,7 +12,7 @@ for the user to type something.
 Exercises (for each example create file `lessesn-2-project7-{tasknumber}`):
 - [X] Ask user for `What is your guess? ` and save the result into variable called `players_guess`
 - [X] Print the result from previews task 
-- [ ] Try to add 5 into variable of the first task
+- [X] Try to add 5 into variable of the first task
 
 ### Compare the guess to a Number
 As you expect, `players_guess` is `17` (String value). Now is the type to change the type
@@ -47,7 +47,7 @@ while True:
 ```
 As you can see of the example. Now the application printed only once `Python`.
 - [X] Let's modified the the guessing game to kept asking for a number
-- [ ] Play the game three-time and count the number of tries until you guess the number
+- [X] Play the game three-time and count the number of tries until you guess the number
 - [ ] Extend the game to do that part of the game
 
 Now the game is so simple because we as developers give value to `computer_number`
@@ -64,13 +64,13 @@ import random
 print(random.randint(1,100))
 ```
 
-- [ ] Create a program that print random number from 10 to 1000
-- [ ] Create a program that print random number from -100 to 100
-- [ ] Create a program that ask user for min and max number then generate random number
+- [X] Create a program that print random number from 10 to 1000
+- [X] Create a program that print random number from -100 to 100
+- [X] Create a program that ask user for min and max number then generate random number
 - [ ] Create a program that ask user for min and max number then generate 10 differents numbers
 
 ### Change the game to use random
-- [ ] Now is the time to change the game to use random number between 1 and 100
+- [X] Now is the time to change the game to use random number between 1 and 100
 
 ### Nested loops
 A nested loop is a loop within a loop, an inner loop within the body of an outer one. 
@@ -98,7 +98,7 @@ for x in range(1,11):
 ```
 
 ### Find the max/min number
-- [ ] Create a program that ask user for two numbers and then return the max number between them
+- [X] Create a program that ask user for two numbers and then return the max number between them
 - [ ] Create a program that ask user for three numbers and then return the max number between them
 - [ ] Create a program that ask user for three numbers and then return the min number
 
