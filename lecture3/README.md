@@ -21,10 +21,10 @@ def sum(first, second):
     return first+second
 print(sum(12,20))
 ```
-- [ ] Create a function that **subtract** to numbers  **first** and **second**
-- [ ] Create a function that **divide** to numbers  **first** and **second**
-- [ ] Create a function that **multiply** to numbers  **first** and **second**
-- [ ] Create a program that ask a user for operation then for two numbers and perform the math operation
+- [X] Create a function that **subtract** to numbers  **first** and **second**
+- [X] Create a function that **divide** to numbers  **first** and **second**
+- [X] Create a function that **multiply** to numbers  **first** and **second**
+- [X] Create a program that ask a user for operation then for two numbers and perform the math operation
 
 ## Comments 
 When writing code in Python, it’s important to make sure that your code 
@@ -66,9 +66,9 @@ done()
 - fd(number) is a function that move your character 100 symbols forward
 - lt(degrees) is a function that turn on left on specific degrees
 
-- [ ] Create a square using the turtle module
-- [ ] Create a isosceles triangle using the turtle module
-- [ ] Create a оctagon using the turtle module
+- [X] Create a square using the turtle module
+- [X] Create a isosceles triangle using the turtle module
+- [X] Create a оctagon using the turtle module
 
 - If you want to fill your figure you need to use following functions:-
     - color(collorName) to choice the collor
