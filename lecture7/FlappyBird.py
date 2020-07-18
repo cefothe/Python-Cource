@@ -9,6 +9,8 @@ def update():
     barry_the_bird.y += barry_the_bird.speed
     top_pipe.x += scroll_speed
     bottom_pipe.x += scroll_speed
+    if top_pipe.right < barry_the_bird.x:
+        barry_the_bird.score += 1
     if top_pipe.right < 0:
         top_pipe.left = WIDTH
         bottom_pipe.left = WIDTH
@@ -23,7 +25,7 @@ def draw():
     top_pipe.draw()
     bottom_pipe.draw()
     screen.draw.text(
-        str(7),
+        str(barry_the_bird.score),
         color='white',
         midtop=(20, 10),
         fontsize=70,
@@ -53,6 +55,7 @@ top_pipe = Actor('top')
 bottom_pipe = Actor('bottom')
 scroll_speed = -1
 gravity = 0.3
+barry_the_bird.score = 0
 reset()
 
 pgzrun.go()
