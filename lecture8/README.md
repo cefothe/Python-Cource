@@ -46,15 +46,15 @@ to be at a different y position each time. To do this we need to pick a random n
     top_pipe.midleft = (WIDTH,offset)
     bottom_pipe.midleft = (WIDTH,offset + top_pipe.height + gap)    
     ```  
--[ ] As you can see noting change at the moment, now we need to add random number to gap variable use 140 to 300
+-[X] As you can see noting change at the moment, now we need to add random number to gap variable use 140 to 300
 
 ## It’s not Flappy Bird with out a flap
 So far our bird image is very static and the game should probably
  just be called “Bird”. Let’s fix that now.
  
--[ ] Let's download those two images ![Bird dead](../lecture8/images/bird2.png)
+-[X] Let's download those two images ![Bird dead](../lecture8/images/bird2.png)
 
--[ ] In order to create animation we need to change bir1 to bir2 when speed variable change.
+-[X] In order to create animation we need to change bir1 to bir2 when speed variable change.
 But take to account that we need to that only when we a alive
     ```python3
     if barry_the_bird.alive:
@@ -68,12 +68,12 @@ Now is the time to make `ofset` to be random as well. Use lower limit 140 and ma
 
 ## Play the game
 Can you see some problems. What happen when you with your score when you died.
-- [ ] Your score doesn't start again and kept the previous result.
+- [X] Your score doesn't start again and kept the previous result.
  When the reset function is called always change the  score to 0
 
-- [ ] Add the end of the file create new variable called `best_result` equals to 0.
-- [ ] Add check in `update` function that verify if the `barry_the_bird.score` is more than `best_result` if that is true 
-assign to `best_result` value of `barry_the_bird.score`
+- [X] Add the end of the file create new variable called `barry_the_bird.best_result` equals to 0.
+- [ ] Add check in `update` function that verify if the `barry_the_bird.score` is more than `barry_the_bird.best_result` if that is true 
+assign to `barry_the_bird.best_result` value of `barry_the_bird.score`
 - [ ] Show the best result value in the same as we did it for `barry_the_bird.score`
 
 ## Lives
