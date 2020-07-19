@@ -24,22 +24,22 @@ top_pipe.pair_number = 1
 We’ll just keep track in the top pipe, 
 we know the bottom one will always be part of the same pair.
 
-- [ ] Every time when we create move the pipe to the start position increase the pipe number
-- [ ] In the place where we check if the bird and the pipe, instead of increment the score,
+- [X] Every time when we create move the pipe to the start position increase the pipe number
+- [X] In the place where we check if the bird and the pipe, instead of increment the score,
 just assign the `top_pipe.pair_number`
-- [ ] Try the game, now when you go to pass some pipe the score is increase only by 1
+- [X] Try the game, now when you go to pass some pipe the score is increase only by 1
 
 ## Make different gaps size
 To make the game more interesting we want the gap between the pipes 
 to be at a different y position each time. To do this we need to pick a random number.
 
-- [ ] Create new file called `test_random.py` and paste the following code their:
+- [X] Create new file called `test_random.py` and paste the following code their:
     ```python3
     import random
     print (random.randint(140,300))
     ```
   Execute the file couple of times to verify that every time you run it you see different numnber
--[ ] Let's update the program programs to use the random for gaps.
+-[X] Let's update the program programs to use the random for gaps.
     Find the 2 lines which do `left = WIDTH` for the pipes, and change them to:
     ```python3
     offset = 0
@@ -53,6 +53,7 @@ So far our bird image is very static and the game should probably
  just be called “Bird”. Let’s fix that now.
  
 -[ ] Let's download those two images ![Bird dead](../lecture8/images/bird2.png)
+
 -[ ] In order to create animation we need to change bir1 to bir2 when speed variable change.
 But take to account that we need to that only when we a alive
     ```python3
