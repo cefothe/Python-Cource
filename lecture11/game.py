@@ -13,7 +13,7 @@ enemy = Actor("alien")
 player2 = Actor("player")
 coin = Actor("coin", pos=(300,300))
 score = 0
-
+timer = 20
 
 def draw():
     screen.clear()
@@ -26,8 +26,11 @@ def draw():
     score_string = str(score)
     screen.draw.text(score_string, (0,0), color='green')
 
-def update():
-    global score
+def update(delta):
+    global score, timer
+    timer = timer - delta
+    if timer <= 0:
+         exit()
     if keyboard.right:
         player.x = player.x + 4
     if keyboard.left:
@@ -54,8 +57,8 @@ def update():
         enemy.y = enemy.y + 1
     if enemy.y > player.y:
         enemy.y = enemy.y - 1
-    # if player.colliderect(enemy):
-    #     exit()
+    if player.colliderect(enemy):
+        exit()
 
     if keyboard.d:
         player2.x = player2.x + 4

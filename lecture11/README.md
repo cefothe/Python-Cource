@@ -73,14 +73,14 @@ Add a variable at the top of the program (but preferably after any import statem
 to store the number of seconds of time remaining in the game:
 
 ```python3 
-time = 20
+timer = 20
 ```
 Pygame Zero calls our update() function many times per second. We can ask it to tell us how much time has passed by adding a parameter to the function, delta. 
 We then subtract this from the remaining time. Modify update() so the first lines look like this:
 ```python3
 def update(delta):
-    global score, time
-    time = time - delta
-    if time <= 0:
+    global score, timer
+    timer = timer - delta
+    if timer <= 0:
          exit()
 ```
