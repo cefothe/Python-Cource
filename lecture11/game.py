@@ -29,8 +29,8 @@ def draw():
 def update(delta):
     global score, timer
     timer = timer - delta
-    if timer <= 0:
-         exit()
+    # if timer <= 0:
+    #      exit()
     if keyboard.right:
         player.x = player.x + 4
     if keyboard.left:
@@ -57,8 +57,8 @@ def update(delta):
         enemy.y = enemy.y + 1
     if enemy.y > player.y:
         enemy.y = enemy.y - 1
-    if player.colliderect(enemy):
-        exit()
+    # if player.colliderect(enemy):
+    #     exit()
 
     if keyboard.d:
         player2.x = player2.x + 4
