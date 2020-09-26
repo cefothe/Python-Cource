@@ -16,10 +16,10 @@ def draw():  # Pygame Zero draw function
     screen.draw.text(str(score), topright=(780, 10), owidth=0.5, ocolor=(255, 255, 255), color=(0, 64, 255),
                      fontsize=60)
     if player.status >= 30:
-        screen.draw.text("GAME OVER\nPress Enter to play again", center=(400, 300), owidth=0.5, ocolor=(255, 255, 255),
+        screen.draw.text("GAME OVER\nPress Enter to exit the game", center=(400, 300), owidth=0.5, ocolor=(255, 255, 255),
                          color=(255, 64, 0), fontsize=60)
     if len(aliens) == 0:
-        screen.draw.text("YOU WON!\nPress Enter to play again", center=(400, 300), owidth=0.5, ocolor=(255, 255, 255),
+        screen.draw.text("YOU WON!\nPress Enter to exit the game", center=(400, 300), owidth=0.5, ocolor=(255, 255, 255),
                          color=(255, 64, 0), fontsize=60)
 
 

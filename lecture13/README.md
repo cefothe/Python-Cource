@@ -72,7 +72,7 @@ In order to do that we need to create update the `draw`. We need to add if claus
 player status is equals or more than 30
 ```python3
 if player.status >= 30:
-    screen.draw.text("GAME OVER\nPress Enter to play again", center=(400, 300), owidth=0.5, ocolor=(255, 255, 255),
+    screen.draw.text("GAME OVER\nPress Enter to exit the game", center=(400, 300), owidth=0.5, ocolor=(255, 255, 255),
     color=(255, 64, 0), fontsize=60)
 ```
 
@@ -80,7 +80,7 @@ if player.status >= 30:
 When the number of aliens is equals to `0`
 ```python3
 if len(aliens) == 0:
-    screen.draw.text("YOU WON!\nPress Enter to play again", center=(400, 300), owidth=0.5, ocolor=(255, 255, 255),
+    screen.draw.text("YOU WON!\nPress Enter to exit the game", center=(400, 300), owidth=0.5, ocolor=(255, 255, 255),
     color=(255, 64, 0), fontsize=60)
 
 ```
