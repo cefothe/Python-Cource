@@ -18,7 +18,6 @@ Open your favorite IDE (I hope this will be PyCharm) and type the following exam
 ```python3
 import pgzrun
 
-
 WIDTH = 800
 HEIGHT = 600
 

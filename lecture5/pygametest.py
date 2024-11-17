@@ -30,7 +30,7 @@ while not done:
         color = (255, 100, 0)
 
     screen.blit(image, (x, y))
-    # pygame.draw.rect(screen, color, pygame.Rect(x, y, 60, 60))
+    pygame.draw.rect(screen, (127,255,0), pygame.Rect(0, 300, 500, 30))
 
     pygame.display.flip()
     clock.tick(60)

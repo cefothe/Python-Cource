@@ -1,8 +1,11 @@
 from turtle import *
 
-player_guess = input("Whats your guess")
+
+
+
 shape("turtle")
-fd(100)
-lt(90)
+for x in range(0,4):
+    fd(100)
+    lt(90)
 
 done()
