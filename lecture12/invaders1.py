@@ -2,6 +2,8 @@ import pgzrun
 from random import randint
 import math
 
+
+
 DIFFICULTY = 1
 player = Actor("player", (400, 550))  # Load in the player Actor image
 
@@ -43,7 +45,8 @@ def drawAliens():
 
 
 def drawBases():
-    for b in range(len(bases)): bases[b].drawClipped()
+    for b in range(len(bases)):
+        bases[b].drawClipped()
 
 
 def drawLasers():
@@ -136,12 +139,12 @@ def updateAliens():
             aliens[a].image = "alien1"
         else:
             aliens[a].image = "alien1b"
-            if randint(0, 10) == 0:
-                lasers.append(Actor("laser1", (aliens[a].x, aliens[a].y)))
-                lasers[len(lasers) - 1].status = 0
-                lasers[len(lasers) - 1].type = 0
-        if aliens[a].y > player.y and player.status == 0:
-            player.status = 1
+        #     if randint(0, 10) == 0:
+        #         lasers.append(Actor("laser1", (aliens[a].x, aliens[a].y)))
+        #         lasers[len(lasers) - 1].status = 0
+        #         lasers[len(lasers) - 1].type = 0
+        # if aliens[a].y > player.y and player.status == 0:
+        #     player.status = 1
     moveSequence += 1
     if moveSequence == 40: moveSequence = 0
 
